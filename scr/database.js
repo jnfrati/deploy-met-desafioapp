@@ -2,10 +2,11 @@ const mysql = require('mysql');//req el mod p/conectarme
 
 //setear los parametros de conexion
 const mySqlConnection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'desafioapp',
+    host: process.env.DB_URL || 'localhost',
+    port: process.env.DB_PORT || 3306,
+    user: process.env.DB_USER || 'root',
+    password: process.env.DB_PASSWORD || '',
+    database: process.env.DB_NAME || 'desafioapp',
     multipleStatements: true
   });
 
