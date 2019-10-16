@@ -12,7 +12,7 @@
     "nodemon": "^1.19.2"
   },
   "scripts": {
-    "dev": "nodemon scr/index.js"
+    "start": "nodemon scr/index.js"
   },
   "keywords": [],
   "author": "",

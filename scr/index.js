@@ -3,7 +3,7 @@ const app = express();
 const cors = require('cors')
 
 //******settings******//
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 80);
 
 // USING CORS 
 app.use(cors());
